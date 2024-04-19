@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>欢迎来到这个神秘的网站</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        #nameInput {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>请输入角色名，查看该角色惊喜！</h1>
+    <h2>输入“萨菲罗斯”有隐藏惊喜~</h2>
+    <div id="nameInput">
+        <input type="text" id="characterName" placeholder="请输入角色名">
+        <button onclick="checkCharacter()">确认</button>
+    </div>
+
+    <script>
+        function checkCharacter() {
+            var characterName = document.getElementById("characterName").value;
+            if (characterName.toLowerCase() === "萨菲罗斯") {
+                window.location.href = "Sephiroth.html";
+            } else {
+                window.location.href = "Other.html";
+            }
+        }
+    </script>
+</body>
+</html>
